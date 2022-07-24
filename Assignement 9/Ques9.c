@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter the even number.\n");
+    scanf("%d",&n);
+    switch(n%2==0){
+        case 1:
+            printf("%d",n+1);
+            break;
+        case 0:
+            printf("invalid");
+            break;
+    }
+    return 0;
+}

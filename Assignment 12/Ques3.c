@@ -1,14 +1,14 @@
 #include<stdio.h>
-void N_naturalNumber(int n){
+void oddNatural(int n){
     if(n==0)
         return;
-    N_naturalNumber(n-1);
+   oddNatural(n-1);
     printf("%d ",2*n-1);
 }
 int main(){
     int n;
     printf("Enter the value of N:\n");
     scanf("%d",&n);
-    N_naturalNumber(n);
+    oddNatural(n);
     return 0;
 }

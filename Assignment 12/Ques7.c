@@ -1,14 +1,14 @@
 #include<stdio.h>
-void N_naturalNumber(int n){
+void squareOfNatural(int n){
     if(n==0)
         return;
-    N_naturalNumber(n-1);
+    squareOfNatural(n-1);
     printf("%d ",n*n);
 }
 int main(){
     int n;
     printf("Enter the value of N:\n");
     scanf("%d",&n);
-    N_naturalNumber(n);
+    squareOfNatural(n);
     return 0;
 }

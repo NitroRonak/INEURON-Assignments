@@ -1,14 +1,14 @@
 #include<stdio.h>
-void N_naturalNumber(int n){
+void reverseN_natural(int n){
     if(n==0)
         return;
     printf("%d ",n);
-    N_naturalNumber(n-1);
+    reverseN_natural(n-1);
 }
 int main(){
     int n;
     printf("Enter the value of N:\n");
     scanf("%d",&n);
-    N_naturalNumber(n);
+    reverseN_natural(n);
     return 0;
 }
